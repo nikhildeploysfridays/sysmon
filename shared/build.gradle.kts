@@ -1,4 +1,4 @@
-<!--
+/*
 Copyright (C) [2026] [Nikhil]
 
 This program is free software: you can redistribute it and/or modify
@@ -13,12 +13,21 @@ GNU Affero General Public License for more details.
 
 You should have received a copy of the GNU Affero General Public License
 along with this program. If not, see <https://www.gnu.org/licenses/>.
--->
+*/
 
-# sysmon
+plugins {
+    id("org.jetbrains.kotlin.multiplatform")
+}
 
-System monitoring utilities and experiments.
+kotlin {
+    androidTarget()
 
-
-# License
-This project is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0). See the LICENSE file for details.
+    sourceSets {
+        val commonMain by getting {
+            dependencies {
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1")
+            }
+        }
+        val androidMain by getting
+    }
+}

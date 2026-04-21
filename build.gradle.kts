@@ -1,4 +1,4 @@
-<!--
+/*
 Copyright (C) [2026] [Nikhil]
 
 This program is free software: you can redistribute it and/or modify
@@ -13,12 +13,10 @@ GNU Affero General Public License for more details.
 
 You should have received a copy of the GNU Affero General Public License
 along with this program. If not, see <https://www.gnu.org/licenses/>.
--->
+*/
 
-# sysmon
-
-System monitoring utilities and experiments.
-
-
-# License
-This project is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0). See the LICENSE file for details.
+plugins {
+    id("com.android.application") version "8.5.2" apply false
+    id("org.jetbrains.kotlin.multiplatform") version "2.0.21" apply false
+    id("org.jetbrains.kotlin.android") version "2.0.21" apply false
+}

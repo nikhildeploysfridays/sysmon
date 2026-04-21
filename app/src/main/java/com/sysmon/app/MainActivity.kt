@@ -1,4 +1,4 @@
-<!--
+/*
 Copyright (C) [2026] [Nikhil]
 
 This program is free software: you can redistribute it and/or modify
@@ -13,12 +13,15 @@ GNU Affero General Public License for more details.
 
 You should have received a copy of the GNU Affero General Public License
 along with this program. If not, see <https://www.gnu.org/licenses/>.
--->
+*/
 
-# sysmon
+package com.sysmon.app
 
-System monitoring utilities and experiments.
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 
-
-# License
-This project is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0). See the LICENSE file for details.
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+    }
+}

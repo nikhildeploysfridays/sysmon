@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
 Copyright (C) [2026] [Nikhil]
 
@@ -14,11 +15,22 @@ GNU Affero General Public License for more details.
 You should have received a copy of the GNU Affero General Public License
 along with this program. If not, see <https://www.gnu.org/licenses/>.
 -->
+<manifest package="com.sysmon.app"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-# sysmon
+    <application
+        android:allowBackup="true"
+        android:label="sysmon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Sysmon">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
 
-System monitoring utilities and experiments.
-
-
-# License
-This project is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0). See the LICENSE file for details.
+</manifest>
